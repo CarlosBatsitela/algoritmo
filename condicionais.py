@@ -19,15 +19,17 @@ else:
 numero2=float(input('digite um numero: '))
 numero3=float(input('digite mais um numero: '))
 numero4=float(input('digite o ultimo numero: '))
-if numero2 >numero3:
-    print('o maior é {numero2}')
+if numero2 >numero3 and numero2 >numero4:
+    print(f'o maior é {numero2}')
+elif numero3 >numero2 and numero3 >numero4:
+    print(f'o maior é {numero3}')
 else:
-    print('o maior é {numero3}')
+    print(f' o maior é {numero4} ')
 #3,4
 
 nota1=float(input('Digite a primeira nota: '))
 nota2=float(input('Digite a segunda nota: '))
-media=({nota1}+{nota2})/2
+media=(nota1+nota2)/2
 if media >=7:
     print('Aprovado')
 else:
@@ -35,7 +37,7 @@ else:
 #5
 
 idade=int(input('Digite sua idade: '))
-if idade <=18:
+if idade <18:
     print('Você é Criança')
 elif idade <=60:
     print('Você é Adulto') 
@@ -45,9 +47,9 @@ else:
 
 salario=float(input('Digite seu salário: '))
 if salario >5000:
-    print('{salario}*0.9')
+    print(f'{salario*0.9}')
 else:
-    print('{salario}*0.95')
+    print(f'{salario*0.95}')
 #7
 
 login=input('Digite seu login: ')
@@ -57,4 +59,3 @@ if login == 'admin' and senha == '1234':
 else:
     print('Acesso negado')
 #8
-
