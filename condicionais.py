@@ -47,9 +47,9 @@ else:
 
 salario=float(input('Digite seu salário: '))
 if salario >5000:
-    print(f'{salario*0.9}')
+    print(f'seu desconto é {salario*0.9}')
 else:
-    print(f'{salario*0.95}')
+    print(f'seu desconto é {salario*0.95}')
 #7
 
 login=input('Digite seu login: ')
@@ -59,3 +59,31 @@ if login == 'admin' and senha == '1234':
 else:
     print('Acesso negado')
 #8
+
+calculo1=float(input('Digite o primeiro numero: '))
+operacao=input('Digite a operação: ')
+calculo2=float(input('Digite o segundo numero: '))
+
+if operacao == '+':
+    print(f'Resultado: {calculo1 + calculo2}')
+elif operacao == '-':
+    print(f'Resultado: {calculo1 - calculo2}')
+elif operacao == '*' or operacao == 'x':
+    print(f'Resultado: {calculo1 * calculo2}')
+elif operacao == '/' and calculo2 != 0:
+    print(f'Resultado: {calculo1 / calculo2}')    
+else:
+    print('Operação inválida')
+#9
+
+altura=float(input('Digite sua altura: '))
+peso=float(input('Digite seu peso: '))
+calculo=peso / (altura * altura)
+if calculo <18.5:
+    print('Abaixo do peso')
+elif calculo <25:
+    print('Peso normal')
+elif calculo <30:
+    print('Sobrepeso')
+else:    
+    print('Obesidade')
